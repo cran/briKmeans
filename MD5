@@ -1,0 +1,10 @@
+724db89e1343e497e12c151c442fd357 *DESCRIPTION
+2e1224522f8c88ef16785ce81c6a025a *NAMESPACE
+49e8ebbc61ef318e7b5498cf0212986a *R/brik.R
+69274988b4e17b02484741f161c7acb7 *R/elbowRule.R
+cedc7b11d55eeee9eec3358aa979a09f *R/fabrik.R
+18bac0ad349ddab6f8cf63a8ccc1171f *R/plotKmeansClustering.R
+2dc85b20e7f83cff98a66e13c30fbfec *man/brik.Rd
+b8b3b68d8ee79a542951255975bfce91 *man/elbowRule.Rd
+88783722caccaf34be26a4614b051609 *man/fabrik.Rd
+169af001d4eb395bb4243c287dafcb1e *man/plotKmeansClustering.Rd

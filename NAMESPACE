@@ -1,0 +1,11 @@
+# Export all names
+exportPattern(".")
+
+importFrom("splines", "bs")
+importFrom("graphics", "legend", "matlines", "matplot", "par",
+    "plot.new", "points")
+importFrom("stats", "cutree", "dist", "hclust", "kmeans", "lm")
+importFrom("cluster", "pam")
+importFrom("boot", "boot")
+importFrom("depthTools", "MBD")
+importFrom("graphics", "axis")
