@@ -1,7 +1,6 @@
 # Export all names
 exportPattern(".")
 
-importFrom("splines", "bs")
 importFrom("graphics", "legend", "matlines", "matplot", "par",
     "plot.new", "points")
 importFrom("stats", "cutree", "dist", "hclust", "kmeans", "lm")
@@ -9,3 +8,11 @@ importFrom("cluster", "pam")
 importFrom("boot", "boot")
 importFrom("depthTools", "MBD")
 importFrom("graphics", "axis")
+importFrom("grDevices", "dev.new", "rainbow")
+importFrom("graphics", "abline", "axis", "box", "boxplot", "legend",
+    "lines", "matplot", "plot", "points", "title")
+importFrom("methods", "is")
+importFrom("stats", "approx", "loess", "optim", "predict", "runif")
+importFrom("splines", "bs")
+importFrom("splines2", "bSpline")
+importFrom("stats", "deriv")

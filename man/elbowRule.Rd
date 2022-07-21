@@ -49,7 +49,7 @@ Albert-Smet, J., Torrente, A. and Romo J. (2021). Modified Band Depth Based Init
     ## simulated data
     set.seed(1)
     x.coord = seq(0,1,0.01)
-    x <- matrix(ncol = length(x.coord), nrow = 100)
+    x <- matrix(ncol = length(x.coord), nrow = 80)
     labels <- matrix(ncol = 100, nrow = 1)
   
     centers <-  matrix(ncol = length(x.coord), nrow = 4)
@@ -59,20 +59,20 @@ Albert-Smet, J., Torrente, A. and Romo J. (2021). Modified Band Depth Based Init
     centers[4, ] <- 0.75*sin(8*pi*abs(x.coord))
   
     for(i in 1:4){
-        for(j in 1:25){
-            labels[25*(i-1) + j] <- i  
-            if(i == 1){x[25*(i-1) + j, ] <- abs(x.coord)-0.5 + 
+        for(j in 1:20){
+            labels[20*(i-1) + j] <- i  
+            if(i == 1){x[20*(i-1) + j, ] <- abs(x.coord)-0.5 + 
                 rnorm(length(x.coord),0,1.5)}
-            if(i == 2){x[25*(i-1) + j, ] <- (abs(x.coord-0.5))^2 - 0.8 + 
+            if(i == 2){x[20*(i-1) + j, ] <- (abs(x.coord-0.5))^2 - 0.8 + 
                 rnorm(length(x.coord),0,1.5)}
-            if(i == 3){x[25*(i-1) + j, ] <- -(abs(x.coord-0.5))^2 + 0.7 + 
+            if(i == 3){x[20*(i-1) + j, ] <- -(abs(x.coord-0.5))^2 + 0.7 + 
                 rnorm(length(x.coord),0,1.5)}
-            if(i == 4){x[25*(i-1) + j, ] <- 0.75*sin(8*pi*abs(x.coord)) + 
+            if(i == 4){x[20*(i-1) + j, ] <- 0.75*sin(8*pi*abs(x.coord)) + 
                 rnorm(length(x.coord),0,1.5)}
             }
         }
 
-    ER <- elbowRule(x, 4, B=25, degFr = 5:12, plot=FALSE)
+    # ER <- elbowRule(x, 4, B=25, degFr = 5:12, plot=FALSE)
     ER <- elbowRule(x, 4, B=25, degFr = 5:12, plot=TRUE)
   
 }

@@ -1,7 +1,7 @@
 plotKmeansClustering <- function (x, kmeansObj, col=c(8,2), lty=c(2,1),
     x.coord = NULL, no.ticks = 5, ...)
 {
-    if (class(kmeansObj)!="kmeans") {
+    if ((!is(kmeansObj,"kmeans"))) {
         stop("Requires a kmeans object...")}
     if (nrow(x)!=length(kmeansObj$cluster)) {
         stop("Clustering does not correspond to data...")}
